@@ -19,6 +19,10 @@
   to {border-right-color: transparent;}
 }
 
+canvas {
+  margin: 0 auto;
+}
+
 ul.work-list img {
   width: 260px;
 }
@@ -106,36 +110,6 @@ ul.work-list .caption-text {
   padding-top: 25px;
 }
 
-/* background animation */
-
-background: linear-gradient(238deg, #28876e, #4a2ebb, #2b86c5);
-background-size: 600% 600%;
--webkit-animation: backgroundAnim 10s ease infinite;
--moz-animation: backgroundAnim 10s ease infinite;
--o-animation: backgroundAnim 10s ease infinite;
-animation: backgroundAnim 10s ease infinite;
-@-webkit-keyframes backgroundAnim {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-@-moz-keyframes backgroundAnim {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-@-o-keyframes backgroundAnim {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-@keyframes backgroundAnim {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-
-/* Background animation */
 
 html, body {
   /*background: linear-gradient(231deg, #64989f, #7cc8d2);
@@ -174,6 +148,23 @@ html, body {
 
 .hide {
   display: none;
+}
+
+#contact .buttons {
+  position: relative;
+}
+
+#contact .email-success {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+
+#contact .email-success-text {
+  position: absolute;
+  left: 70px;
+  top: 20px;
+  width: 250px;
 }
 
 #contact button {
@@ -309,4 +300,87 @@ html, body {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+/* success animation */
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 151px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 36px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#successAnimationCircle {
+  stroke-dasharray: 151px 36px;
+  stroke: #66BB6A;
+}
+
+#successAnimationCheck {
+  stroke-dasharray: 151px 36px;
+  stroke: #66BB6A;
+}
+
+#successAnimationResult {
+  fill: #66BB6A;
+  opacity: 0;
+}
+
+
+#successAnimation {
+  animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+
+#successAnimationCircle {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle,
+             0.3s linear 0.9s 1 both fadeOut;
+}
+
+#successAnimationCheck {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck,
+             0.3s linear 0.9s 1 both fadeOut;
+}
+
+#successAnimationResult {
+  animation: 0.3s linear 0.9s both fadeIn;
 }
