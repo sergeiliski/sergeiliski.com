@@ -1,0 +1,39 @@
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.btn-primary {
+  border: none;
+  background-color: $gray-700 !important;
+  color: $white !important;
+  &:hover {
+    background-color: $primary !important;
+  };
+  &:focus,
+  &:active {
+    background-color: $primary !important;
+    box-shadow: 0 0 0 0.2rem rgb(111 66 193 / 50%) !important;
+    color: $white !important;
+  };
+}
+
+.form-control:focus {
+  color: $gray-700;
+  background-color: #fff;
+  border-color: rgb(111 66 193 / 50%);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(111 66 193 / 25%);
+}
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+  }
+}
