@@ -1,14 +1,10 @@
 import React from 'react';
-import { ReactSVG } from 'react-svg'
 
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 import { Thumbnail } from '../components/Thumbnail';
-
-// import { ReactComponent as FirebaseIcon } from './firebase-icon.svg';
-import firebase  from './firebase-icon.svg';
 import Icon from '../components/Icon';
 
 
@@ -165,7 +161,7 @@ const IndexPage = () => (
                     {description}
                   </p>
                   <ul className="list-inline dev-icons">
-                    {project.skills.map(skill => {
+                    {skills.map(skill => {
                       const { icon, name, type, short } = skill;
                       return (
                         <li className="list-inline-item">

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 export class Icon extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const { icon, name, type, short } = this.props;

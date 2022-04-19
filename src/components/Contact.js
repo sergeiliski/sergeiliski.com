@@ -51,7 +51,7 @@ export class ContactForm extends Component {
         <div className="thank-you" style={{ height: this.formRef.current?.offsetHeight }}>
           <div className="text-2xl">Thank you!</div>
           <div className="text-md">I'll be in touch soon.</div>
-          <a href="" onClick={this.handleNewMessage}>Send another one</a>
+          <a href="/#" onClick={this.handleNewMessage}>Send another one</a>
         </div>
       )
     }
@@ -97,7 +97,7 @@ export class ContactForm extends Component {
           </div>
         </div>
         <div className="row">
-        <div className="text-center text-md-left col-md-2">
+        <div className="text-md-left col-md-2">
           <button form="contact-form" className="btn btn-primary btn-block" type="submit">
             {!submitting && 'Send'}
             {submitting && (

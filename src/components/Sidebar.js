@@ -19,6 +19,7 @@ export class Sidebar extends Component {
       if (config.pages[tab.href]) {
         return tab;
       }
+      return false;
     })
     this.state = {
       tabs,

@@ -1,6 +1,6 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const Element = props => {
   return props.children;
@@ -61,7 +61,7 @@ class Scroll extends React.Component {
         {typeof this.props.children === 'object' ? (
           React.cloneElement(this.props.children, { onClick: this.handleClick })
         ) : (
-          <span onClick={this.handleClick}>{this.props.children}</span>
+          <span role="none" onClick={this.handleClick}>{this.props.children}</span>
         )}
       </Element>
     );

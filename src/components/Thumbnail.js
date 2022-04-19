@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 export class Thumbnail extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const { src } = this.props;

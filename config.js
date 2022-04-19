@@ -124,7 +124,7 @@ module.exports = {
     }, {
       icon: 'fa-sass',
       name: 'Sass',
-    }, ,
+    },
   ],
   tools: [
     {
