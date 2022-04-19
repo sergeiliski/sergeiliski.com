@@ -7,6 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
+  pathPrefix: `/`,
   firstName: 'Sergei',
   lastName: 'Liski',
   about_v2: `I am experienced in leveraging agile frameworks to provide a robust
