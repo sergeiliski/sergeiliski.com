@@ -1,12 +1,13 @@
 module.exports = {
   siteTitle: 'Sergei Liski Developer', // <title>
+  siteIcon: 'src/assets/favicon/android-chrome-192x192.png',
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/favicon/android-chrome-192x192.png',
   pathPrefix: `/`,
   firstName: 'Sergei',
   lastName: 'Liski',
@@ -177,7 +178,7 @@ module.exports = {
       title: 'Watchshouldi',
       link: '',
       description: 'Find something to watch by putting a movie or a show to a vote',
-      thumbnail: 'https://i.ibb.co/hWcKK0m/watchshouldi-thumbnail.jpg',
+      thumbnail: 'https://i.ibb.co/sQ4ZTxq/watchshouldi-thumbnail.png',
       skills: [
         {
           icon: 'fa-js-square',
@@ -202,7 +203,7 @@ module.exports = {
     },
   ],
   email: 'sergeiliski@gmail.com',
-  phone: '000-00000',
+  phone: '',
   address: 'London, United Kingdom',
   formEndpoint: 'https://getform.io/f/beec99b8-e76a-4cdc-8a8f-bd8553b17963',
   pages: {

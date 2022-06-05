@@ -14,7 +14,8 @@ class Layout extends Component {
           query SiteTitleQuery {
             site {
               siteMetadata {
-                title
+                title,
+                icon
               }
             }
           }
@@ -26,6 +27,13 @@ class Layout extends Component {
               meta={[
                 { name: 'description', content: 'Resume' },
                 { name: 'keywords', content: 'site, web' },
+              ]}
+              link={[
+                {
+                  'ref': 'icon', 
+                  'type': 'image/png', 
+                  'href': data.site.siteMetadata.icon,
+                }
               ]}
             >
               <html lang="en" />
