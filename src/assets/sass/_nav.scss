@@ -4,6 +4,9 @@
     letter-spacing: 0.05rem;
     text-transform: uppercase;
   }
+  .navbar-nav .nav-item.active a.nav-link {
+    color: $white;
+  }
   .navbar-toggler {
     &:focus {
       outline-color: lighten($primary, 15%);
